@@ -18,7 +18,9 @@ export const Home = () => {
       <Navbar />
       <main className="bg-black">
         <div className="pt-10">
-          <h2 className="z-10 text-white text-center text-2xl font-extralight">
+          <h2 className="z-10 text-white text-center text-2xl font-extralight bg-gradient-to-r bg-clip-text  text-transparent 
+            from-indigo-500 via-purple-500 to-indigo-500
+            animate-text rounded-md p-3  ">
             {" "}
             Tecnologias
           </h2>
@@ -102,7 +104,7 @@ export const Home = () => {
                   src={htmlLogo}
                   alt="Badge do HTML5"
                   title="HTML é a linguagem de marcação que permite que você veja esse site e todos os outros sites da web"
-                  className="w-20 h-24 flex"
+                  className="w-20 h-24 flex mr-16"
                 />
               </Grid>
               <Grid
@@ -121,7 +123,9 @@ export const Home = () => {
           </span>
         </div>
         <div className="pt-10">
-          <h2 className="z-10 text-white text-center text-2xl font-extralight">
+          <h2 className="z-10 text-white text-center text-2xl font-extralight bg-gradient-to-r bg-clip-text  text-transparent 
+            from-indigo-500 via-purple-500 to-indigo-500
+            animate-text rounded-md p-3  " >
             {" "}
             Projetos
           </h2>
@@ -137,7 +141,7 @@ export const Home = () => {
                     src={defaultImg}
                     alt="Place image..."
                     title="This project was made with ..., ... and ... and designed to attend the client needs"
-                    className="flex w-44 h-32 object-cover"
+                    className="flex w-44 h-32 object-cover rounded-sm"
                   />
                 </Link>
               </Grid>
@@ -151,7 +155,7 @@ export const Home = () => {
                     src={defaultImg}
                     alt="Place image..."
                     title="This project was made with ..., ... and ... and designed to attend the client needs"
-                    className="flex w-44 h-32 object-cover"
+                    className="flex w-44 h-32 object-cover rounded-sm"
                   />
                 </Link>
               </Grid>
@@ -165,7 +169,7 @@ export const Home = () => {
                     src={defaultImg}
                     alt="Place image..."
                     title="This project was made with ..., ... and ... and designed to attend the client needs"
-                    className="flex w-44 h-32 object-cover"
+                    className="flex w-44 h-32 object-cover rounded-sm"
                   />
                 </Link>
               </Grid>
@@ -173,7 +177,9 @@ export const Home = () => {
           </span>
         </div>
         <div className="pt-10">
-          <h2 className="z-10 text-white text-center text-2xl font-extralight">
+          <h2 className="z-10 text-white text-center text-2xl font-extralight bg-gradient-to-r bg-clip-text  text-transparent 
+            from-indigo-500 via-purple-500 to-indigo-500
+            animate-text rounded-md p-3  ">
             Experiências
           </h2>
           <pre className="pt-5 text-white text-center">
