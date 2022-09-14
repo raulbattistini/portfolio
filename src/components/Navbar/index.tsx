@@ -24,7 +24,7 @@ export const Navbar = () => {
             >
               <Grid item xs={4}>
                 <div className="ml-5 flex">
-                  <Link to="/" className="hover:text-[#4567ff]">Raul Battistini </Link>
+                  <Link to="/" className="hover:text-indigo-500">Raul Battistini </Link>
                 </div>
               </Grid>
               <Grid item xs={4}>
@@ -34,7 +34,7 @@ export const Navbar = () => {
               </Grid>
               <Grid item xs={4}>
                 <div className="flex flex-end float-right mr-5 ">
-                  <Link to="/contact" className="hover:text-[#4567ff]">
+                  <Link to="/contact" className="hover:text-indigo-500">
                     {" "}
                     Entrar em contato{" "}
                     <ArrowForwardIosIcon className="justify-center" />
@@ -51,23 +51,23 @@ export const Navbar = () => {
           >
             <Grid item xs={4}>
               <div className="ml-5 flex ">
-                <Link to="/" className="hover:text-[#4567ff]">Raul Battistini </Link>
+                <Link to="/" className="text-white hover:text-indigo-500">Raul Battistini </Link>
               </div>
             </Grid>
             <Grid item xs={4}>
               <div className="align-center text-center">
                 <Grid container>
                   <Grid item xs={6}>
-                  <Link to="/" className="hover:text-[#4567ff]">  Blog</Link>
+                  <Link to="/blog" className="hover:text-indigo-500">  Blog  </Link>
                   </Grid>
                   <Grid item xs={6}>
-                  <Link to="/" className="hover:text-[#4567ff]">  Certificados</Link>
+                  <Link to="/certificados" className="hover:text-indigo-500">  Certificados</Link>
                   </Grid>
                 </Grid>
               </div>
             </Grid>
             <Grid item xs={4}>
-              <div className="flex flex-end float-right mr-5 hover:text-[#4567ff]">
+              <div className="flex flex-end float-right mr-5 hover:text-indigo-500">
                 <Link to="/contact">
                   {" "}
                   Entrar em contato{" "}

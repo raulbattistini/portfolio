@@ -7,11 +7,11 @@ import linkedin from "../../assets/images/icons/linkedin.png";
 export const Footer = () => {
   return (
     <>
-    <span className=" bg-[#272727] text-white text-2xl pb-3 pt-3 align-center text-center self-center justify-center flex divide-x">
+    <span className=" bg-[#272727] text-white text-2xl pb-3 pt-2 align-center text-center self-center justify-center flex divide-x">
       
     </span>
-      <div className="bg-[#272727] text-white flex text-2xl justify-center">
-        <span className=" pt-8 font-inter font-thin">
+      <div className="bg-[#272727] text-white flex text-2xl justify-center pt-2 pb-2">
+        <span className=" pt-9 pb-12 font-inter font-thin">
           {" "}
           Consulte também minhas redes sociais:{" "}
         </span>
