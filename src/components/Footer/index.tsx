@@ -12,17 +12,17 @@ export const Footer = () => {
   }
   return (
     <div className=" bg-[#272727] z-10">
-      <span className=" text-white flex text-2xl justify-center pt-2 pb-2 h-fit flex-row">
-        <span className=" pt-9 pb-12 text-lg tablet:text-sm phone:text-xs pocket:text-xs font-thin pl-3 rounded-sm hover:text-yellow-500">
+      <span className=" text-white flex text-2xl justify-center pt-2 pb-2 h-fit flex-row pocket:p-0">
+        <span className=" pt-9 pb-12 text-lg tablet:text-sm phone:text-xs pocket:text-xs font-thin pl-3 rounded-sm hover:text-yellow-500 pocket:mt-6 phone:text-lg phone:mt-5">
           {" "}
           Consulte também minhas redes sociais:{" "}
         </span>
         <SiGithub
-          className="w-10 h-10 flex flex-row justify-between m-8 object-cover cursor-pointer hover:text-indigo-500 "
+          className="w-10 h-10 flex flex-row justify-between m-8 object-cover cursor-pointer hover:text-indigo-500 pocket:mt-14 phone:mt-12"
           onClick={redirGithub}
         />
         <FaLinkedin
-          className="w-10 h-10 flex flex-row justify-between m-8 text-9xl cursor-pointer hover:text-indigo-500"
+          className="w-10 h-10 flex flex-row justify-between m-8 text-9xl cursor-pointer hover:text-indigo-500 pocket:mt-14 phone:mt-12"
           onClick={redirLinkedin}
         />
       </span>
