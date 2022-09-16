@@ -3,24 +3,27 @@ import { Footer } from "../../components/Footer";
 import { Navbar } from "../../components/Navbar";
 import { Grid } from "@mui/material";
 import { Link } from "react-router-dom";
-import cssLogo from "../../assets/images/icons/CSS3-Logo.png";
-import htmlLogo from "../../assets/images/icons/HTML5_Badge.svg";
-import includesMySql from "../../assets/images/icons/include-mysql.png";
-import jsLogo from "../../assets/images/icons/JavaScript-Logo.png";
-import nodeLogo from "../../assets/images/icons/nodejs_logo.svg";
-import reactLogo from "../../assets/images/icons/react-icon.svg";
-import tsLogo from "../../assets/images/icons/typescript_logo.svg";
+import { DiReact } from "react-icons/di";
+import { FaNodeJs } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
+import { SiJavascript } from "react-icons/si";
+import { GrMysql } from "react-icons/gr";
+import { DiHtml5 } from "react-icons/di";
+import { FaCss3Alt } from "react-icons/fa";
 import defaultImg from "../../assets/images/default.jpg";
+import project1 from "../../assets/images/project1.png";
+import project2 from "../../assets/images/project2.png";
 
 export const Home = () => {
   return (
     <>
       <Navbar />
-      <main className="bg-black">
+      <main className="bg-black w-full">
         <div className="pt-10">
-          <h2 className="z-10 text-white text-center text-2xl font-extralight bg-gradient-to-r bg-clip-text  text-transparent 
-            from-indigo-500 via-purple-500 to-indigo-500
-            animate-text rounded-md p-3  ">
+          <h2
+            className="z-10 text-white text-center text-2xl font-light bg-gradient-to-r bg-clip-text  text-transparent from-indigo-500 via-purple-500 to-indigo-500
+            animate-text rounded-md p-3  "
+          >
             {" "}
             Tecnologias
           </h2>
@@ -32,10 +35,8 @@ export const Home = () => {
                 xs={3}
                 className="items-center	justify-center	flex-wrap flex"
               >
-                <img
-                  src={reactLogo}
-                  alt="Logo do React"
-                  className="w-16 h-16  items-center	justify-center	flex-wrap flex"
+                <DiReact
+                  className="text-white text-7xl items-center	justify-center flex-wrap flex hover:text-indigo-500"
                   title="React é uma library de Javascript feita para construção de páginas client-side no modelo SPA (single-page application)"
                 />
               </Grid>
@@ -44,11 +45,9 @@ export const Home = () => {
                 xs={3}
                 className="items-center	justify-center	flex-wrap flex"
               >
-                <img
-                  src={nodeLogo}
-                  alt="Logo do Node"
+                <FaNodeJs
+                  className="text-white text-6xl items-center	justify-center flex-wrap flex hover:text-indigo-500"
                   title="NodeJs é um runtime de Javascript que permite à linguagem ser rodada do lado do servidor de forma eficiente, graças ao seu Input/Output não-bloqueante"
-                  className="w-20 h-20 items-center	justify-center	flex-wrap flex"
                 />
               </Grid>
               <Grid
@@ -56,11 +55,9 @@ export const Home = () => {
                 xs={3}
                 className="items-center	justify-center	flex-wrap flex"
               >
-                <img
-                  src={tsLogo}
-                  alt="Logo do Typescript"
+                <SiTypescript
                   title="Typescript é um superset de JavaScript que contém elementos como tipagem estática e decoradores em classes"
-                  className="w-16 h-16 items-center	justify-center	flex-wrap flex"
+                  className="text-white text-6xl items-center	justify-center flex-wrap flex hover:text-indigo-500"
                 />
               </Grid>
               <Grid
@@ -68,11 +65,9 @@ export const Home = () => {
                 xs={3}
                 className="items-center	justify-center	flex-wrap flex"
               >
-                <img
-                  src={jsLogo}
-                  alt="Logo do JavaScript"
+                <SiJavascript
                   title="JavaScript é a linguagem de programação que é executada do lado do cliente nos navegadores"
-                  className="w-16 h-16 rounded-md items-center	justify-center	flex-wrap flex"
+                  className="text-white text-6xl items-center	justify-center flex-wrap flex rounded-sm hover:text-indigo-500"
                 />
               </Grid>
             </Grid>{" "}
@@ -88,11 +83,9 @@ export const Home = () => {
                 xs={4}
                 className="items-center	justify-center	flex-wrap flex"
               >
-                <img
-                  src={includesMySql}
-                  alt="Conditional Logo do MySQL"
-                  title="MySQL é um sistema gerenciador de banco de dados relacional da Oracle"
-                  className="w-24 h-16"
+                <GrMysql
+                  title="MySQL é um sistema gerenciador de banco de dados relacional de propriedade da Oracle Inc."
+                  className="object-cover text-white text-6xl items-center	justify-center flex-wrap flex hover:text-indigo-500 pocket:absolute"
                 />
               </Grid>
               <Grid
@@ -100,11 +93,9 @@ export const Home = () => {
                 xs={4}
                 className="items-center	justify-center	flex-wrap flex"
               >
-                <img
-                  src={htmlLogo}
-                  alt="Badge do HTML5"
+                <DiHtml5
+                  className="text-white text-7xl mr-10 items-center	justify-center flex-wrap flex hover:text-indigo-500 pocket:absolute object-cover"
                   title="HTML é a linguagem de marcação que permite que você veja esse site e todos os outros sites da web"
-                  className="w-20 h-24 flex mr-16"
                 />
               </Grid>
               <Grid
@@ -112,20 +103,20 @@ export const Home = () => {
                 xs={4}
                 className="items-center	justify-center	flex-wrap flex"
               >
-                <img
-                  src={cssLogo}
-                  alt="Badge do CSS3"
+                <FaCss3Alt
+                  className="text-white text-7xl mr-10 items-center	justify-center flex-wrap flex hover:text-indigo-500 pocket:absolute  pocket:pt-1"
                   title="CSS são as folhas de estilo que permitem que os sites que você navega sejam estilizados"
-                  className="w-16 h-20"
                 />
               </Grid>
             </Grid>{" "}
           </span>
         </div>
         <div className="pt-10">
-          <h2 className="z-10 text-white text-center text-2xl font-extralight bg-gradient-to-r bg-clip-text  text-transparent 
+          <h2
+            className="z-10 text-white text-center text-2xl font-light bg-gradient-to-r bg-clip-text  text-transparent 
             from-indigo-500 via-purple-500 to-indigo-500
-            animate-text rounded-md p-3  " >
+            animate-text rounded-md p-3  "
+          >
             {" "}
             Projetos
           </h2>
@@ -136,66 +127,93 @@ export const Home = () => {
                 xs={4}
                 className="items-center	justify-center	flex-wrap flex"
               >
-                <Link to="/">
+                <div className="flex flex-col w-56 h-52 pt-4 pl-2 bg-gradient-to-b from-indigo-500 to-transparent rounded-md object-cover hover:scale-125 duration-300 tablet:w-44 tablet:h-40 phone:w-32 phone:h-28 pocket:w-24 pocket:h-20 pocket:pt-5">
+                  <h4 className="text-center flex flex-col text-white justify-between pb-2 phone:text-sm pocket:text-xs pocket:pb-5">
+                    {" "}
+                    Concluído
+                    ✔️{" "}
+                  </h4>
                   <img
-                    src={defaultImg}
-                    alt="Place image..."
-                    title="This project was made with ..., ... and ... and designed to attend the client needs"
-                    className="flex w-44 h-32 object-cover rounded-sm"
+                    src={project1}
+                    alt="Preview image from Vercel deploy"
+                    title="This project was made with React, TailwindCSS and Typescript to see how TailwindCSS integrates with my current stack"
+                    className="flex w-52 h-32 object-fit rounded-sm tablet:pr-2 phone:pr-2 pocket:pr-2"
                   />
-                </Link>
+                  <span className="text-center flex flex-col text-white pt-2">
+                    <Link to="https://github.com/raulbattistini/landingPage">
+                      {" "}
+                      Ver no Github{" "}
+                    </Link>
+                  </span>
+                </div>
               </Grid>
               <Grid
                 item
                 xs={4}
                 className="items-center	justify-center	flex-wrap flex"
               >
-                <Link to="/">
+                <div className="flex flex-col w-56 h-52 pt-4 pl-2 bg-gradient-to-b from-indigo-500 to-transparent rounded-md object-cover hover:scale-125 duration-300 tablet:w-44 tablet:h-40 phone:w-32 phone:h-28 pocket:w-24 pocket:h-20 pocket:pt-1">
+                  <h4 className="text-center flex flex-col text-white justify-between pb-2 phone:text-sm pocket:text-xs pocket:pt-2 pocket:mb-1">
+                    {" "}
+                    Em construção⌛{" "}
+                  </h4>
                   <img
-                    src={defaultImg}
-                    alt="Place image..."
-                    title="This project was made with ..., ... and ... and designed to attend the client needs"
-                    className="flex w-44 h-32 object-cover rounded-sm"
+                    src={project2}
+                    alt="EB Doceria Gourmet printscreen..."
+                    title="This project is being made with React, TailwindCSS and Typescript. In the near future, it will be integrated with a NodeJS API and a MySQL database and hosted on a VPS Server, which is already configured."
+                    className="flex w-52 h-32 object-fit rounded-sm tablet:pr-2 phone:pr-2 pocket:pr-2"
                   />
-                </Link>
+                  <span className="text-center flex flex-col text-white pt-2">
+                    <Link to="https://github.com/raulbattistini/ebdoceria"> Ver no Github </Link>
+                  </span>
+                </div>
               </Grid>
               <Grid
                 item
                 xs={4}
                 className="items-center	justify-center	flex-wrap flex"
               >
-                <Link to="/">
+                <div className="flex flex-col w-56 h-52 pt-4 pl-2 bg-gradient-to-b from-indigo-500 to-transparent rounded-md object-cover hover:scale-125 duration-300 tablet:w-44 tablet:h-40 phone:w-32 phone:h-28 pocket:w-24 pocket:h-20 pocket:pt-1">
+                  <h4 className="text-center flex flex-col text-white justify-between pb-2 phone:text-sm pocket:text-xs pocket:pt-2 pocket:mb-1">
+                    {" "}
+                    Em construção⌛{" "}
+                  </h4>
                   <img
                     src={defaultImg}
                     alt="Place image..."
-                    title="This project was made with ..., ... and ... and designed to attend the client needs"
-                    className="flex w-44 h-32 object-cover rounded-sm"
+                    title="This project was made with React, TailwindCSS and Typescript. In the near future, it will be integrated with a NodeJS API and a MySQL database"
+                    className="flex w-52 h-32 object-fit rounded-sm tablet:pr-2 phone:pr-2 pocket:pr-2"
                   />
-                </Link>
+                  <span className="text-center flex flex-col text-white pt-2">
+                    <Link to="https://github.com/raulbattistini/ebdoceria"> Ver no Github </Link>
+                  </span>
+                </div>
               </Grid>
             </Grid>
           </span>
         </div>
         <div className="pt-10">
-          <h2 className="z-10 text-white text-center text-2xl font-extralight bg-gradient-to-r bg-clip-text  text-transparent 
+          <h2
+            className="z-10 text-white text-center text-2xl font-light bg-gradient-to-r bg-clip-text  text-transparent 
             from-indigo-500 via-purple-500 to-indigo-500
-            animate-text rounded-md p-3  ">
+            animate-text rounded-md p-3 pocket:pt-12 "
+          >
             Experiências
           </h2>
           <pre className="pt-5 text-white text-center">
-            <h3 className="font-light">Position</h3>
-            <span className="font-thin">Workplace</span>
-            <p className="font-thin">From - to </p>
+            <h3 className="font-light">Desenvolvedor freelancer</h3>
+            <span className="font-thin">Autônomo</span>
+            <p className="font-thin">03/2020 - 02/2022 </p>
           </pre>
           <pre className="pt-5 text-white text-center">
-            <h3 className="font-light">Position</h3>
-            <span className="font-thin">Workplace</span>
-            <p className="font-thin">From - to </p>
+            <h3 className="font-light">Desenvolvedor Jr</h3>
+            <span className="font-thin">City Connect</span>
+            <p className="font-thin"> 04/2022 - 09/2022 </p>
           </pre>
           <pre className="pt-5 text-white text-center">
-            <h3 className="font-light">Position</h3>
-            <span className="font-thin">Workplace</span>
-            <p className="font-thin pb-10">From - to </p>
+            <h3 className="font-light">Desenvolvedor Jr</h3>
+            <span className="font-thin">DMK3</span>
+            <p className="font-thin pb-10">09/2022 - </p>
           </pre>
         </div>
       </main>

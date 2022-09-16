@@ -4,7 +4,7 @@ import { Footer } from "../../components/Footer";
 import { Navbar } from "../../components/Navbar";
 
 export const ContactMe = () => {
-  const email = "myemail@example.com";
+  const email = "raulbattistini.3@gmail.com";
   return (
     <>
       <Navbar />
@@ -29,26 +29,14 @@ export const ContactMe = () => {
                 Mais sobre mim:
               </h2>
               <p className="text-white text-center text-lg font-thin pb-3 m-0 justify-center flex flex-column ">
-                Muito prazer, meu nome é Raul <br /> Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Fuga a nobis voluptatibus autem
-                quasi dolor aperiam praesentium facere, maiores quae numquam
-                esse ut dignissimos! Totam officia corporis ipsa amet
-                laboriosam?
-              </p>
+                Muito prazer, meu nome é Raul <br /> Sou desenvolvedor full-stack, comecei no frontend em 2020 com HTML, CSS e JavaScript, eventualmente passei a conhecer a MERN (MongoDB, Express, React, Node) stack e avancei nos estudos.
+                Gosto muito do que faço e, embora eu não acredite no 'faça o que você ama', trabalhar com o que se odeia definitivamente não é nada bom (experiência própria).
+               </p>
               <p className="text-white text-center text-lg font-thin pb-10 m-0 justify-center flex flex-column ">
-                my preeview text handmade <br /> Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Fuga a nobis voluptatibus autem
-                quasi dolor aperiam praesentium facere, maiores quae numquam
-                esse ut dignissimos! Totam officia corporis ipsa amet
-                laboriosam?
+               Algumas curiosidades sobre mim: <br /> 
+               Gosto de tecnologia e gostaria de ter conhecido mais cedo, até os 16 anos era difícil eu me identificar com algo e pensar o que eu gostaria de fazer da vida. Quando conheci o desenvolvimento web, parecia que tinha finalmente achado algo que fosse gratificante o bastante para fazer.
               </p>
-              <p className="text-white text-center text-lg font-thin pb-10 m-0 justify-center flex flex-column ">
-                my preeview text handmade <br /> Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Fuga a nobis voluptatibus autem
-                quasi dolor aperiam praesentium facere, maiores quae numquam
-                esse ut dignissimos! Totam officia corporis ipsa amet
-                laboriosam?
-              </p>
+               <span  className="text-white text-center text-lg font-thin pb-10 m-0 justify-center flex flex-row "> Meus hobbies são: academia, xadrez e futebol (só assistindo, porque jogando... dá dó) </span>
             </article>
           </div>
         </>
