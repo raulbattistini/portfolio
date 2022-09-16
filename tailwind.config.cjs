@@ -35,7 +35,7 @@ module.exports = {
       },
       colors: {
         "black-rgba": "rgba(0, 0, 0, 0.5)",
-        transparent: "rgba(255, 255, 255, 0)",
+        "transparent": "rgba(255, 255, 255, 0)",
         "glass-white": "rgba(255, 255, 255, 0.1)",
       },
     },
