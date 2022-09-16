@@ -15,6 +15,9 @@ import project1 from "../../assets/images/project1.png";
 import project2 from "../../assets/images/project2.png";
 
 export const Home = () => {
+  const repo1Link = "https://github.com/raulbattistini/landingPage";
+  const repo2Link = "https://github.com/raulbattistini/ebdoceria";
+  const repo3Link = "https://github.com/raulbattistini/";
   return (
     <>
       <Navbar />
@@ -127,11 +130,15 @@ export const Home = () => {
                 xs={4}
                 className="items-center	justify-center	flex-wrap flex"
               >
-                <div className="flex flex-col w-56 h-52 pt-4 pl-2 bg-gradient-to-b from-indigo-500 to-transparent rounded-md object-cover hover:scale-125 duration-300 tablet:w-44 tablet:h-40 phone:w-32 phone:h-28 pocket:w-24 pocket:h-20 pocket:pt-5">
+                <div
+                  className="flex flex-col w-56 h-52 pt-4 pl-2 bg-gradient-to-b from-indigo-500 to-transparent rounded-md object-cover hover:scale-125 duration-300 tablet:w-44 tablet:h-40 phone:w-32 phone:h-28 pocket:w-24 pocket:h-20 pocket:pt-5 cursor-pointer"
+                  onClick={() => {
+                    window.location.assign(repo1Link);
+                  }}
+                >
                   <h4 className="text-center flex flex-col text-white justify-between pb-2 phone:text-sm pocket:text-xs pocket:pb-5">
                     {" "}
-                    Concluído
-                    ✔️{" "}
+                    Concluído ✔️{" "}
                   </h4>
                   <img
                     src={project1}
@@ -140,10 +147,8 @@ export const Home = () => {
                     className="flex w-52 h-32 object-fit rounded-sm tablet:pr-2 phone:pr-2 pocket:pr-2"
                   />
                   <span className="text-center flex flex-col text-white pt-2">
-                    <Link to="https://github.com/raulbattistini/landingPage">
-                      {" "}
-                      Ver no Github{" "}
-                    </Link>
+                    {" "}
+                    Ver no Github
                   </span>
                 </div>
               </Grid>
@@ -152,7 +157,12 @@ export const Home = () => {
                 xs={4}
                 className="items-center	justify-center	flex-wrap flex"
               >
-                <div className="flex flex-col w-56 h-52 pt-4 pl-2 bg-gradient-to-b from-indigo-500 to-transparent rounded-md object-cover hover:scale-125 duration-300 tablet:w-44 tablet:h-40 phone:w-32 phone:h-28 pocket:w-24 pocket:h-20 pocket:pt-1">
+                <div
+                  className="flex flex-col w-56 h-52 pt-4 pl-2 bg-gradient-to-b from-indigo-500 to-transparent rounded-md object-cover hover:scale-125 duration-300 tablet:w-44 tablet:h-40 phone:w-32 phone:h-28 pocket:w-24 pocket:h-20 pocket:pt-1 cursor-pointer"
+                  onClick={() => {
+                    window.location.assign(repo2Link);
+                  }}
+                >
                   <h4 className="text-center flex flex-col text-white justify-between pb-2 phone:text-sm pocket:text-xs pocket:pt-2 pocket:mb-1">
                     {" "}
                     Em construção⌛{" "}
@@ -164,7 +174,10 @@ export const Home = () => {
                     className="flex w-52 h-32 object-fit rounded-sm tablet:pr-2 phone:pr-2 pocket:pr-2"
                   />
                   <span className="text-center flex flex-col text-white pt-2">
-                    <Link to="https://github.com/raulbattistini/ebdoceria"> Ver no Github </Link>
+                    <Link to="https://github.com/raulbattistini/ebdoceria">
+                      {" "}
+                      Ver no Github{" "}
+                    </Link>
                   </span>
                 </div>
               </Grid>
@@ -173,7 +186,12 @@ export const Home = () => {
                 xs={4}
                 className="items-center	justify-center	flex-wrap flex"
               >
-                <div className="flex flex-col w-56 h-52 pt-4 pl-2 bg-gradient-to-b from-indigo-500 to-transparent rounded-md object-cover hover:scale-125 duration-300 tablet:w-44 tablet:h-40 phone:w-32 phone:h-28 pocket:w-24 pocket:h-20 pocket:pt-1">
+                <div
+                  className="flex flex-col w-56 h-52 pt-4 pl-2 bg-gradient-to-b from-indigo-500 to-transparent rounded-md object-cover hover:scale-125 duration-300 tablet:w-44 tablet:h-40 phone:w-32 phone:h-28 pocket:w-24 pocket:h-20 pocket:pt-1 cursor-pointer"
+                  onClick={() => {
+                    window.location.assign(repo3Link);
+                  }}
+                >
                   <h4 className="text-center flex flex-col text-white justify-between pb-2 phone:text-sm pocket:text-xs pocket:pt-2 pocket:mb-1">
                     {" "}
                     Em construção⌛{" "}
@@ -185,7 +203,10 @@ export const Home = () => {
                     className="flex w-52 h-32 object-fit rounded-sm tablet:pr-2 phone:pr-2 pocket:pr-2"
                   />
                   <span className="text-center flex flex-col text-white pt-2">
-                    <Link to="https://github.com/raulbattistini/ebdoceria"> Ver no Github </Link>
+                    <Link to="https://github.com/raulbattistini/ebdoceria">
+                      {" "}
+                      Ver no Github{" "}
+                    </Link>
                   </span>
                 </div>
               </Grid>
