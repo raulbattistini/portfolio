@@ -1,35 +1,10 @@
 import React, { useState } from "react";
 import { Grid } from "@mui/material";
 import { Link } from "react-router-dom";
-import { AiOutlineMenuUnfold } from "react-icons/ai";
 import { useInView, InView } from "react-intersection-observer";
-import Box from "@mui/material/Box";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
-import Avatar from "@mui/material/Avatar";
-import MenuItem from "@mui/material/MenuItem";
-import MenuIcon from "@mui/icons-material/Menu";
-import defaultImg from "../../assets/images/default.jpg";
 import { Drawer } from "../Drawer";
 
 export const Navbar = () => {
-  const clearCache = () => {
-    window.location.reload();
-  };
-
-  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(
-    null
-  );
-
-  const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElUser(event.currentTarget);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
   const [open, setOpen] = useState(false);
   const [ref, inView] = useInView({
     rootMargin: "0px",
@@ -80,24 +55,16 @@ export const Navbar = () => {
             <Grid item xs={4}>
               <div className="ml-5 flex ">
                 {" "}
-                <button>
-                  <AiOutlineMenuUnfold
-                    className="ultrawide:hidden desktop:hidden laptop:hidden tablet:hidden phone:hidden pocket:text-white cursor-pointer"
-                    onClick={() => {
-                      !setOpen;
-                    }}
-                  />
-                </button>
-                {open === true ? (
+                {open == false ? (
                   <>
-                    <Drawer />
+                   <Drawer/>
                   </>
                 ) : (
                   ""
                 )}
                 <Link
                   to="/"
-                  className="text-white hover:text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500 text-lg tablet:text-sm  phone:text-xs pocket:text-xs pocket:ml-10 pocket:mt-2"
+                  className="text-white hover:text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500 text-lg tablet:text-sm  phone:text-xs pocket:text-xs pocket:ml-10 pocket:mt-1"
                 >
                   Raul Battistini{" "}
                 </Link>
