@@ -142,8 +142,8 @@ export const Home = () => {
                   </h4>
                   <img
                     src={project1}
-                    alt="Preview image from Vercel deploy"
-                    title="This project was made with React, TailwindCSS and Typescript to see how TailwindCSS integrates with my current stack"
+                    alt="Printscreen do deploy feito na Vercel"
+                    title="Esse projeto foi feito com React, TailwindCSS e Typescript para ver como o TailwindCSS interagia com a minha stack atual"
                     className="flex w-52 h-32 object-fit rounded-sm tablet:pr-2 phone:pr-2 pocket:pr-2"
                   />
                   <span className="text-center flex flex-col text-white pt-2">
@@ -169,8 +169,8 @@ export const Home = () => {
                   </h4>
                   <img
                     src={project2}
-                    alt="EB Doceria Gourmet printscreen..."
-                    title="This project is being made with React, TailwindCSS and Typescript. In the near future, it will be integrated with a NodeJS API and a MySQL database and hosted on a VPS Server, which is already configured."
+                    alt="Printscreen localhost de EB Doceria Gourmet"
+                    title="Essse projeto está sendo feito com React, TailwindCSS e Typescript. Em breve, ele será integrado a uma API em NodeJS e um banco de dados em MySQL e hosteado no meu VPS Server já configurado."
                     className="flex w-52 h-32 object-fit rounded-sm tablet:pr-2 phone:pr-2 pocket:pr-2"
                   />
                   <span className="text-center flex flex-col text-white pt-2">
