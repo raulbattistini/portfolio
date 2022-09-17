@@ -27,7 +27,7 @@ export const Navbar = () => {
                     to="/"
                     className="hover:text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500 text-lg tablet:text-sm phone:text-xs pocket:text-xs"
                   >
-                    Raul Battistini{" "}
+                    Raul &#60;b&#62; attistini &#60;/b&#62;
                   </Link>
                 </div>
               </Grid>
@@ -66,7 +66,7 @@ export const Navbar = () => {
                   to="/"
                   className="text-white hover:text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500 text-lg tablet:text-sm  phone:text-xs pocket:text-xs pocket:ml-10 pocket:mt-1"
                 >
-                  Raul Battistini{" "}
+                  Raul 	&#60;b&#62; attistini &#60;/b&#62; {" "}
                 </Link>
               </div>
             </Grid>
