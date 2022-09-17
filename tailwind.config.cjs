@@ -11,11 +11,7 @@ module.exports = {
       'ultrawide': { 'min': '1280px', 'max': '9999px'}
     },
     fontFamily: {
-      poppins: ['poppins, "sans-serif"'],
-      thin: ['poppins-thin, "sans-serif"'],
-      light: ['poppins-light, "sans-serif"'],
-      extralight: ['poppins-extralight, "sans-serif"'],
-      bold: ['poppins-bold, "sans-serif"'],
+      poppins: ['poppins, "sans-serif"']
     },
     extend: {
       animation: {
