@@ -4,11 +4,13 @@ import { SiTypescript } from "react-icons/si";
 import { SiJavascript } from "react-icons/si";
 import { Footer } from "../../components/Footer";
 import { Navbar } from "../../components/Navbar";
-import defaultImg from "../../assets/images/default.jpg";
 import { Link } from "react-router-dom";
 import { FaCss3Alt } from "react-icons/fa";
 
 export const Blog = () => {
+  const hashnode1stSeries = 'https://raulbattistini.hashnode.dev/series/css-options';
+  const hashnode2ndSeries = 'https://raulbattistini.hashnode.dev/series/typescript-javascript';
+  const hashnode3rdSeries = 'https://raulbattistini.hashnode.dev/series/databases';
   return (
     <div className="bg-black h-fit">
       <Navbar />
@@ -34,14 +36,11 @@ export const Blog = () => {
           </Grid>
           <Grid item xs={9}>
             <div className="text-white flex flex-col justify-between pt-5 relative ">
-              <Link
-                to="https://raulbattistini.hashnode.dev/series/css-options"
-                className="font-thin"
-              >
-                <h4 className="text-white flex flex-col justify-between font-light bg-gradient-to-r from-indigo-500 to-red-500 pl-3 rounded-l-sm hover:text-yellow-500">
+              
+                <h4 className="text-white flex flex-col justify-between font-light bg-gradient-to-r from-indigo-500 to-red-500 pl-3 rounded-l-sm hover:text-yellow-500"
+                onClick={()=>{window.location.assign(hashnode1stSeries)}}>
                   Estilizando projetos
                 </h4>
-              </Link>
               <span className="font-extralight pocket:text-sm">
                 Por ser algo que todos têm contato em algum momento, decidi
                 falar sobre CSS e algumas alternativas que existem,
@@ -56,14 +55,11 @@ export const Blog = () => {
           </Grid>
           <Grid item xs={9}>
             <div className="text-white flex flex-col justify-between pt-5 relative">
-              <Link
-                to="https://raulbattistini.hashnode.dev/series/typescript-javascript"
-                className="font-thin"
-              >
-                <h4 className="text-white flex flex-col justify-between font-light bg-gradient-to-r from-indigo-500 to-red-500 pl-3 rounded-l-sm hover:text-yellow-500">
+              
+                <h4 className="text-white flex flex-col justify-between font-light bg-gradient-to-r from-indigo-500 to-red-500 pl-3 rounded-l-sm hover:text-yellow-500"
+                onClick={()=>{window.location.assign(hashnode2ndSeries)}}>
                   Typescript ou Javascript?
                 </h4>{" "}
-              </Link>
               <span className="font-extraligh pocket:text-sm">
                 O caminho padrão que todos são ensinados a começar no
                 desenvolvimento web é com HTML/ CSS, depois partir para o
@@ -76,14 +72,10 @@ export const Blog = () => {
           </Grid>
           <Grid item xs={9}>
             <div className="text-white flex flex-col justify-between pt-5 relative">
-              <Link
-                to="https://raulbattistini.hashnode.dev/series/databases"
-                className="font-thin"
-              >
-                <h4 className="text-white flex flex-col justify-between font-light bg-gradient-to-r from-indigo-500 to-red-500 pl-3 rounded-l-sm hover:text-yellow-500">
+                <h4 className="text-white flex flex-col justify-between font-light bg-gradient-to-r from-indigo-500 to-red-500 pl-3 rounded-l-sm hover:text-yellow-500"
+                onClick={()=>{window.location.assign(hashnode3rdSeries)}}>
                   Construí todo o projeto, e agora? Onde armazenar?
                 </h4>
-              </Link>
               <span className="font-extralight pocket:text-sm">
                 Se não houvesse onde se armazenar dados, a web seria um
                 arquipélago de sites estáticos, se é que teria existido. Graças
