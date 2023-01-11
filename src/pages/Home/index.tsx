@@ -5,19 +5,19 @@ import { Grid } from "@mui/material";
 import { Link } from "react-router-dom";
 import { DiReact } from "react-icons/di";
 import { FaNodeJs } from "react-icons/fa";
-import { SiTypescript } from "react-icons/si";
+import { SiPostgresql, SiTypescript } from "react-icons/si";
 import { SiJavascript } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { DiHtml5 } from "react-icons/di";
 import { FaCss3Alt } from "react-icons/fa";
-import defaultImg from "../../assets/images/default.jpg";
 import project1 from "../../assets/images/project1.png";
 import project2 from "../../assets/images/project2.png";
+import project3 from "../../assets/images/project-thumbnail.png";
 
 export const Home = () => {
   const repo1Link = "https://github.com/raulbattistini/landingPage";
   const repo2Link = "https://github.com/raulbattistini/ebdoceria";
-  const repo3Link = "https://github.com/raulbattistini/";
+  const repo3Link = "https://github.com/raulbattistini/estate";
   return (
     <>
       <Navbar />
@@ -75,15 +75,12 @@ export const Home = () => {
               </Grid>
             </Grid>{" "}
           </span>
-          <span className="pt-10 flex ">
+          <span className="flex justify-around">
             {" "}
-            <Grid
-              container
-              className="justify-center flex flex-column items-center pl-20"
-            >
+            <Grid container className="pt-8">
               <Grid
                 item
-                xs={4}
+                xs={3}
                 className="items-center	justify-center	flex-wrap flex"
               >
                 <GrMysql
@@ -93,22 +90,32 @@ export const Home = () => {
               </Grid>
               <Grid
                 item
-                xs={4}
+                xs={3}
                 className="items-center	justify-center	flex-wrap flex"
               >
                 <DiHtml5
-                  className="text-white text-7xl mr-10 items-center	justify-center flex-wrap flex hover:text-indigo-500 pocket:absolute object-cover"
+                  className="text-white text-7xl mr-2 items-center	justify-center flex-wrap flex hover:text-indigo-500 pocket:absolute object-cover"
                   title="HTML é a linguagem de marcação que permite que você veja esse site e todos os outros sites da web"
                 />
               </Grid>
               <Grid
                 item
-                xs={4}
+                xs={3}
                 className="items-center	justify-center	flex-wrap flex"
               >
                 <FaCss3Alt
-                  className="text-white text-7xl mr-10 items-center	justify-center flex-wrap flex hover:text-indigo-500 pocket:absolute  pocket:pt-1"
+                  className="text-white text-7xl mr-2 items-center	justify-center flex-wrap flex hover:text-indigo-500 pocket:absolute  pocket:pt-1"
                   title="CSS são as folhas de estilo que permitem que os sites que você navega sejam estilizados"
+                />
+              </Grid>
+              <Grid
+                item
+                xs={3}
+                className="items-center	justify-center	flex-wrap flex"
+              >
+                <SiPostgresql
+                  title="PostgreSQL (ou Postgres) é um banco de dados open-source robusto."
+                  className="text-white text-6xl items-center	justify-center flex-wrap flex rounded-sm hover:text-indigo-500"
                 />
               </Grid>
             </Grid>{" "}
@@ -130,23 +137,25 @@ export const Home = () => {
                 xs={4}
                 className="items-center	justify-center	flex-wrap flex"
               >
-                <div
-                  className="flex flex-col w-56 h-52 pt-4 pl-2 bg-gradient-to-b from-indigo-500 to-transparent rounded-md object-cover hover:scale-125 duration-300 tablet:w-44 tablet:h-40 phone:w-32 phone:h-28 pocket:w-24 pocket:h-20 pocket:pt-5 cursor-pointer"
-                  onClick={() => {
-                    window.location.assign(repo1Link);
-                  }}
-                >
+                <div className="flex flex-col w-56 h-52 pt-4 pl-2 bg-gradient-to-b from-indigo-500 to-transparent rounded-md object-cover hover:scale-125 duration-300 tablet:w-44 tablet:h-40 phone:w-32 phone:h-28 pocket:w-24 pocket:h-20 pocket:pt-5 cursor-pointer">
                   <h4 className="text-center flex flex-col text-white justify-between pb-2 phone:text-sm pocket:text-xs pocket:pb-5">
                     {" "}
                     Concluído ✔️{" "}
                   </h4>
-                  <img
-                    src={project1}
-                    alt="Printscreen do deploy feito na Vercel"
-                    title="Esse projeto foi feito com React, TailwindCSS e Typescript para ver como o TailwindCSS interagia com a minha stack atual"
-                    className="flex w-52 h-32 object-fit rounded-sm tablet:pr-2 phone:pr-2 pocket:pr-2"
-                  />
-                  <span className="text-center flex flex-col text-white pt-2">
+                  <Link to="/landing-page-project">
+                    <img
+                      src={project1}
+                      alt="Printscreen do deploy feito na Vercel"
+                      title="Esse projeto foi feito com React, TailwindCSS e Typescript para ver como o TailwindCSS interagia com a minha stack atual"
+                      className="flex w-52 h-32 object-fit rounded-sm tablet:pr-2 phone:pr-2 pocket:pr-2"
+                    />
+                  </Link>
+                  <span
+                    className="text-center flex flex-col text-white pt-2"
+                    onClick={() => {
+                      window.location.assign(repo1Link);
+                    }}
+                  >
                     {" "}
                     Ver no Github
                   </span>
@@ -157,23 +166,25 @@ export const Home = () => {
                 xs={4}
                 className="items-center	justify-center	flex-wrap flex"
               >
-                <div
-                  className="flex flex-col w-56 h-52 pt-4 pl-2 bg-gradient-to-b from-indigo-500 to-transparent rounded-md object-cover hover:scale-125 duration-300 tablet:w-44 tablet:h-40 phone:w-32 phone:h-28 pocket:w-24 pocket:h-20 pocket:pt-1 cursor-pointer"
-                  onClick={() => {
-                    window.location.assign(repo2Link);
-                  }}
-                >
+                <div className="flex flex-col w-56 h-52 pt-4 pl-2 bg-gradient-to-b from-indigo-500 to-transparent rounded-md object-cover hover:scale-125 duration-300 tablet:w-44 tablet:h-40 phone:w-32 phone:h-28 pocket:w-24 pocket:h-20 pocket:pt-1 cursor-pointer">
                   <h4 className="text-center flex flex-col text-white justify-between pb-2 phone:text-sm pocket:text-xs pocket:pt-2 pocket:mb-1">
                     {" "}
                     Em construção⌛{" "}
                   </h4>
-                  <img
-                    src={project2}
-                    alt="Printscreen localhost de EB Doceria Gourmet"
-                    title="Essse projeto está sendo feito com React, TailwindCSS e Typescript. Em breve, ele será integrado a uma API em NodeJS e um banco de dados em MySQL e hosteado no meu VPS Server já configurado."
-                    className="flex w-52 h-32 object-fit rounded-sm tablet:pr-2 phone:pr-2 pocket:pr-2"
-                  />
-                  <span className="text-center flex flex-col text-white pt-2">
+                  <Link to="/eb-doceria-project">
+                    <img
+                      src={project2}
+                      alt="Printscreen localhost de EB Doceria Gourmet"
+                      title="Essse projeto está sendo feito com React, Node, Postgres, TailwindCSS e Typescript."
+                      className="flex w-52 h-32 object-fit rounded-sm tablet:pr-2 phone:pr-2 pocket:pr-2"
+                    />
+                  </Link>
+                  <span
+                    className="text-center flex flex-col text-white pt-2"
+                    onClick={() => {
+                      window.location.assign(repo2Link);
+                    }}
+                  >
                     <Link to="https://github.com/raulbattistini/ebdoceria">
                       {" "}
                       Ver no Github{" "}
@@ -186,27 +197,27 @@ export const Home = () => {
                 xs={4}
                 className="items-center	justify-center	flex-wrap flex"
               >
-                <div
-                  className="flex flex-col w-56 h-52 pt-4 pl-2 bg-gradient-to-b from-indigo-500 to-transparent rounded-md object-cover hover:scale-125 duration-300 tablet:w-44 tablet:h-40 phone:w-32 phone:h-28 pocket:w-24 pocket:h-20 pocket:pt-1 cursor-pointer"
-                  onClick={() => {
-                    window.location.assign(repo3Link);
-                  }}
-                >
+                <div className="flex flex-col w-56 h-52 pt-4 pl-2 bg-gradient-to-b from-indigo-500 to-transparent rounded-md object-cover hover:scale-125 duration-300 tablet:w-44 tablet:h-40 phone:w-32 phone:h-28 pocket:w-24 pocket:h-20 pocket:pt-1 cursor-pointer">
                   <h4 className="text-center flex flex-col text-white justify-between pb-2 phone:text-sm pocket:text-xs pocket:pt-2 pocket:mb-1">
                     {" "}
                     Em construção⌛{" "}
                   </h4>
-                  <img
-                    src={defaultImg}
-                    alt="Place image..."
-                    title="This project was made with React, TailwindCSS and Typescript. In the near future, it will be integrated with a NodeJS API and a MySQL database"
-                    className="flex w-52 h-32 object-fit rounded-sm tablet:pr-2 phone:pr-2 pocket:pr-2"
-                  />
-                  <span className="text-center flex flex-col text-white pt-2">
-                    <Link to="https://github.com/raulbattistini/ebdoceria">
-                      {" "}
-                      Ver no Github{" "}
-                    </Link>
+                  <Link to="/estate-project">
+                    <img
+                      src={project3}
+                      alt="Estate project..."
+                      title="Sistema web para imobiliárias feito com minha stack base."
+                      className="flex w-52 h-32 object-fit rounded-sm tablet:pr-2 phone:pr-2 pocket:pr-2"
+                    />
+                  </Link>
+                  <span
+                    className="text-center flex flex-col text-white pt-2 cursor-pointer"
+                    onClick={() => {
+                      window.location.assign(repo3Link);
+                    }}
+                  >
+                    {" "}
+                    Ver no Github{" "}
                   </span>
                 </div>
               </Grid>
@@ -222,19 +233,19 @@ export const Home = () => {
             Experiências
           </h2>
           <pre className="pt-5 text-white text-center">
-            <h3 className="font-light">Desenvolvedor freelancer</h3>
+            <h3 className="font-light">Freelancer</h3>
             <span className="font-thin">Autônomo</span>
             <p className="font-thin">03/2020 - 02/2022 </p>
           </pre>
           <pre className="pt-5 text-white text-center">
-            <h3 className="font-light">Desenvolvedor Jr</h3>
+            <h3 className="font-light">Analista de Sistemas</h3>
             <span className="font-thin">City Connect</span>
-            <p className="font-thin"> 04/2022 - 09/2022 </p>
+            <p className="font-thin"> 04/2022 - 10/2022 </p>
           </pre>
           <pre className="pt-5 text-white text-center">
-            <h3 className="font-light">Desenvolvedor Jr</h3>
+            <h3 className="font-light">Analista de Sistemas</h3>
             <span className="font-thin">DMK3</span>
-            <p className="font-thin pb-10">09/2022 - </p>
+            <p className="font-thin pb-10">10/2022 - </p>
           </pre>
         </div>
       </main>
