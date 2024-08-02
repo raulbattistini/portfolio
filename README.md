@@ -4,3 +4,5 @@
 
 \
 The portfolio has samples of previous projects, their status, technologies I use, blog posts, contact details and personal trivia.
+
+### Quite honestly, it'd be better suited if done with plain old HTML/ CSS and JavaScript.
